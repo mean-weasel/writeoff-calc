@@ -4,6 +4,10 @@ import { useState, useEffect } from 'react';
 import { TaxProfile, computeTaxLiability, computeSavings, SavingsBreakdown, TaxResult } from '@/lib/tax-engine';
 import TaxProfileComponent from '@/components/TaxProfile';
 import RatesSummary from '@/components/RatesSummary';
+import PurchaseInput from '@/components/PurchaseInput';
+import ResultHero from '@/components/ResultHero';
+import Breakdown from '@/components/Breakdown';
+import QuickCompare from '@/components/QuickCompare';
 
 const STORAGE_KEY = 'writeoff-calc-profile';
 
@@ -38,7 +42,7 @@ function loadProfile(): TaxProfile {
 
 export default function Calculator() {
   const [profile, setProfile] = useState<TaxProfile>(DEFAULT_PROFILE);
-  const [expenseAmount] = useState<number>(0);
+  const [expenseAmount, setExpenseAmount] = useState<number>(0);
   const [mounted, setMounted] = useState(false);
 
   // Load from localStorage on mount
@@ -61,9 +65,6 @@ export default function Calculator() {
   const breakdown: SavingsBreakdown | null =
     expenseAmount > 0 ? computeSavings(profile, expenseAmount) : null;
 
-  // Suppress unused variable warning for breakdown (used in future tasks)
-  void breakdown;
-
   return (
     <div className="receipt">
       {/* Header */}
@@ -77,11 +78,17 @@ export default function Calculator() {
       <TaxProfileComponent profile={profile} onChange={setProfile} />
       <RatesSummary baseline={baseline} state={profile.state} />
 
-      {/* Placeholder sections for Tasks 9 and 10 */}
-      {/* PurchaseInput will go here */}
-      {/* ResultHero will go here */}
-      {/* Breakdown will go here */}
-      {/* QuickCompare will go here */}
+      <PurchaseInput value={expenseAmount} onChange={setExpenseAmount} />
+
+      {breakdown && (
+        <ResultHero breakdown={breakdown} expenseAmount={expenseAmount} />
+      )}
+
+      {breakdown && (
+        <Breakdown breakdown={breakdown} expenseAmount={expenseAmount} profile={profile} />
+      )}
+
+      <QuickCompare profile={profile} onSelectAmount={setExpenseAmount} />
 
       {/* Footer */}
       <div className="receipt-footer">
