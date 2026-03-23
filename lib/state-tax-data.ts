@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 /**
  * 2025 US State Income Tax Data
  *
