@@ -41,7 +41,7 @@ export default function PurchaseInput({ value, onChange }: PurchaseInputProps) {
             setRawValue(input);
             const parsed = parseCurrencyInput(input);
             if (!isNaN(parsed)) {
-              onChange(parsed);
+              onChange(Math.max(0, parsed));
             }
           }}
         />
