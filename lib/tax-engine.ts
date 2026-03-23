@@ -1,5 +1,6 @@
 import { getTaxData } from './tax-data';
 import { calculateStateTax } from './state-tax-data';
+import { computeW2PreTaxEquivalent } from './w2-equivalent';
 
 // ─── Types ─────────────────────────────────────────────────────────────────────
 
@@ -209,7 +210,14 @@ export function computeSavings(profile: TaxProfile, expense: number): SavingsBre
     seSavings,
     stateSavings,
     qbiOffset,
-    w2PreTaxEquivalent: 0,
+    w2PreTaxEquivalent: computeW2PreTaxEquivalent(
+      expense,
+      baseline.marginalFederalRate,
+      profile.w2Income,
+      getTaxData(profile.taxYear, profile.filingStatus).ssWageBase,
+      profile.state,
+      Math.max(0, baseline.agi - baseline.standardDeduction)
+    ),
     baseline,
     withExpense,
   };

@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from 'react';
-import type { TaxProfile } from '@/lib/tax-engine';
+import type { TaxProfile as TaxProfileType } from '@/lib/tax-engine';
 import { ALL_STATES, STATE_WARNINGS } from '@/lib/state-tax-data';
 import { parseCurrencyInput } from '@/lib/format';
 
 interface TaxProfileProps {
-  profile: TaxProfile;
-  onChange: (profile: TaxProfile) => void;
+  profile: TaxProfileType;
+  onChange: (profile: TaxProfileType) => void;
 }
 
 function formatForDisplay(amount: number): string {
@@ -89,7 +89,7 @@ export default function TaxProfile({ profile, onChange }: TaxProfileProps) {
           onChange={(e) =>
             onChange({
               ...profile,
-              filingStatus: e.target.value as TaxProfile['filingStatus'],
+              filingStatus: e.target.value as TaxProfileType['filingStatus'],
             })
           }
         >
@@ -135,7 +135,7 @@ export default function TaxProfile({ profile, onChange }: TaxProfileProps) {
         <select
           value={profile.taxYear}
           onChange={(e) =>
-            onChange({ ...profile, taxYear: Number(e.target.value) as TaxProfile['taxYear'] })
+            onChange({ ...profile, taxYear: Number(e.target.value) as TaxProfileType['taxYear'] })
           }
         >
           <option value={2025}>2025</option>

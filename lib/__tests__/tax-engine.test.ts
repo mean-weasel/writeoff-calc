@@ -236,9 +236,13 @@ describe('computeSavings', () => {
       expect(result.baseline.totalTax).toBeGreaterThan(result.withExpense.totalTax);
     });
 
-    it('w2PreTaxEquivalent is 0 (wired in Task 5)', () => {
+    it('w2PreTaxEquivalent is computed (wired in Task 5)', () => {
       const result = computeSavings(baseProfile, 1_000);
-      expect(result.w2PreTaxEquivalent).toBe(0);
+      // base profile: $150K W-2 < $176,100 SS wage base → full FICA 7.65%
+      // marginal federal 24%, AZ 2.5%, FICA 7.65% → total ~34.15%
+      // $1000 / (1 - 0.3415) ≈ $1518
+      expect(result.w2PreTaxEquivalent).toBeGreaterThan(1_500);
+      expect(result.w2PreTaxEquivalent).toBeCloseTo(1518.6, 0);
     });
   });
 
