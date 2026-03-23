@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from 'next/dynamic';
+import ErrorBoundary from '@/components/ErrorBoundary';
 
 function ReceiptSkeleton() {
   return (
@@ -33,5 +34,9 @@ const Calculator = dynamic(() => import('@/components/Calculator'), {
 });
 
 export default function CalculatorLoader() {
-  return <Calculator />;
+  return (
+    <ErrorBoundary>
+      <Calculator />
+    </ErrorBoundary>
+  );
 }
