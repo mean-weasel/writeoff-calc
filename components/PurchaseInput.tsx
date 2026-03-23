@@ -1,11 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { parseCurrencyInput } from '@/lib/format';
-
-function addCommas(n: string): string {
-  return n.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
+import { parseCurrencyInput, addCommas } from '@/lib/format';
 
 interface PurchaseInputProps {
   value: number;
