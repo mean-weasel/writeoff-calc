@@ -8,7 +8,7 @@
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
-export interface StateBracket {
+interface StateBracket {
   rate: number
   floor: number
 }

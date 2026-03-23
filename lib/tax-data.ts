@@ -1,12 +1,12 @@
 export type FilingStatus = 'single' | 'mfj' | 'mfs' | 'hoh'
 export type TaxYear = 2025 | 2026
 
-export interface Bracket {
+interface Bracket {
   rate: number
   floor: number
 }
 
-export interface TaxData {
+interface TaxData {
   brackets: Bracket[]
   standardDeduction: number
   ssWageBase: number
