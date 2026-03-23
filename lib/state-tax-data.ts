@@ -317,26 +317,26 @@ const STATE_STANDARD_DEDUCTIONS: Record<string, number> = {
   Kansas: 3_500,
   Kentucky: 3_160,
   Louisiana: 0,        // LA uses AGI
-  Maine: 14_600,
+  Maine: 14_600,       // ME caps at prior-year federal std deduction
   Maryland: 2_550,
   Massachusetts: 0,    // MA taxes from AGI
   Michigan: 0,         // MI taxes from AGI (flat rate)
   Minnesota: 14_575,
   Mississippi: 2_300,
-  Missouri: 14_600,
+  Missouri: 15_750,   // MO conforms to federal standard deduction
   Montana: 5_540,
   Nebraska: 7_900,
   'New Jersey': 0,     // NJ taxes from AGI
   'New Mexico': 0,     // NM taxes from AGI
   'New York': 8_000,
-  'North Carolina': 0, // NC uses federal AGI
+  'North Carolina': 10_750, // NC starts from federal AGI then applies its own std deduction
   'North Dakota': 15_750, // ND uses federal taxable income — use federal std deduction
   Ohio: 0,             // OH uses AGI
   Oklahoma: 6_350,
   Oregon: 2_745,
   Pennsylvania: 0,     // PA taxes from AGI (flat rate)
   'Rhode Island': 10_550,
-  'South Carolina': 14_600,
+  'South Carolina': 15_750, // SC conforms to federal standard deduction
   Utah: 0,             // UT taxes from AGI (flat rate with credit)
   Vermont: 7_000,
   Virginia: 8_000,
