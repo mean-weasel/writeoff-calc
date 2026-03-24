@@ -22,7 +22,6 @@ const tools = [
     href: '/calculators/quarterly-estimates',
     title: 'Quarterly Estimates',
     description: 'Calculate how much to set aside each quarter when you have W-2 income and an LLC.',
-    comingSoon: true,
   },
 ]
 
@@ -59,24 +58,12 @@ export default function CalculatorsHub() {
         <div style={{ padding: '0' }}>
           {tools.map((tool) => (
             <div key={tool.href} className="profile-section">
-              {tool.comingSoon ? (
-                <div style={{ opacity: 0.5 }}>
-                  <div style={{ fontSize: '14px', fontWeight: 600, marginBottom: '4px' }}>
-                    {tool.title}
-                    <span style={{ fontSize: '10px', color: '#888', marginLeft: '8px', letterSpacing: '1px' }}>
-                      COMING SOON
-                    </span>
-                  </div>
-                  <div style={{ fontSize: '12px', color: '#888' }}>{tool.description}</div>
+              <Link href={tool.href} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+                <div style={{ fontSize: '14px', fontWeight: 600, marginBottom: '4px', color: '#1a1a1a' }}>
+                  {tool.title} →
                 </div>
-              ) : (
-                <Link href={tool.href} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
-                  <div style={{ fontSize: '14px', fontWeight: 600, marginBottom: '4px', color: '#1a1a1a' }}>
-                    {tool.title} →
-                  </div>
-                  <div style={{ fontSize: '12px', color: '#888' }}>{tool.description}</div>
-                </Link>
-              )}
+                <div style={{ fontSize: '12px', color: '#888' }}>{tool.description}</div>
+              </Link>
             </div>
           ))}
         </div>
