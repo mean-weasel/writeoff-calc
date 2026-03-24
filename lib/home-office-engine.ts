@@ -10,7 +10,7 @@ export interface HomeOfficeExpense {
   businessUsePct: number | null
 }
 
-export interface HomeOfficeInputs {
+interface HomeOfficeInputs {
   officeSqft: number
   homeSqft: number
   expenses: HomeOfficeExpense[]
