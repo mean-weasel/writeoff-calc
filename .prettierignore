@@ -7,3 +7,4 @@ build/
 dist/
 *.md
 package-lock.json
+.superpowers/
