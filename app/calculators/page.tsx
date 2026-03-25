@@ -1,11 +1,18 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import NavBar from '@/components/NavBar'
+import { SITE_URL } from '@/lib/site-config'
 
 export const metadata: Metadata = {
   title: 'Tax Calculators for W-2 + LLC Owners — 2025–2026',
   description:
     'Free tax calculators for W-2 employees with a side business. See the real cost of write-offs, home office deductions, and quarterly estimated taxes.',
+  alternates: { canonical: '/calculators' },
+  openGraph: {
+    title: 'That $2,000 laptop? It actually costs $1,320.',
+    description:
+      'See the real price of business expenses after write-offs. Free tax calculators for W-2 employees with an LLC.',
+  },
 }
 
 const tools = [
@@ -73,6 +80,23 @@ export default function CalculatorsHub() {
           <br />* * * THANK YOU * * *
         </div>
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebApplication',
+            name: 'Tax Calculators for W-2 + LLC Owners',
+            description:
+              'Free tax calculators for W-2 employees with a side business. See the real cost of write-offs, home office deductions, and quarterly estimated taxes.',
+            url: `${SITE_URL}/calculators`,
+            applicationCategory: 'FinanceApplication',
+            operatingSystem: 'All',
+            offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+            browserRequirements: 'Requires JavaScript',
+          }),
+        }}
+      />
     </main>
   )
 }
