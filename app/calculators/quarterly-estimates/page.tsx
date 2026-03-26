@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function QuarterlyEstimatesPage() {
   return (
-    <main className="page">
+    <main>
       <QuarterlyLoader />
       <script
         type="application/ld+json"

@@ -34,7 +34,7 @@ const tools = [
 
 export default function CalculatorsHub() {
   return (
-    <main className="page">
+    <main>
       <div className="receipt">
         <div className="receipt-header">
           <h1>Tax Calculators</h1>

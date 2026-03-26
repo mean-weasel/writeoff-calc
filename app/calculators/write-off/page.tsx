@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function WriteOffPage() {
   return (
-    <main className="page">
+    <main>
       <CalculatorLoader />
       <script
         type="application/ld+json"

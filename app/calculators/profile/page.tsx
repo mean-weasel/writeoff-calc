@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function ProfileRoute() {
   return (
-    <main className="page">
+    <main>
       <ProfilePageLoader />
       <script
         type="application/ld+json"
