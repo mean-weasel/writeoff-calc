@@ -6,7 +6,6 @@ import { computeTaxLiability } from '@/lib/tax-engine'
 import { computeBusinessUsePct, computeHomeOfficeSavings } from '@/lib/home-office-engine'
 import type { HomeOfficeExpense } from '@/lib/home-office-engine'
 import Link from 'next/link'
-import NavBar from '@/components/NavBar'
 import ProfileSummary from '@/components/ProfileSummary'
 import HomeOfficeInputs, { EXPENSE_CONFIGS, type ExpenseState } from '@/components/HomeOfficeInputs'
 import HomeOfficeResults from '@/components/HomeOfficeResults'
@@ -68,7 +67,6 @@ export default function HomeOfficeCalculator() {
 
   return (
     <>
-      <NavBar />
       <div className="receipt">
         <div className="receipt-header">
           <h1>

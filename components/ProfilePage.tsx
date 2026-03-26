@@ -8,7 +8,6 @@ import { ALL_STATES, STATE_WARNINGS } from '@/lib/state-tax-data'
 import { parseCurrencyInput } from '@/lib/format'
 import RatesSummary from '@/components/RatesSummary'
 import Link from 'next/link'
-import NavBar from '@/components/NavBar'
 
 function formatForDisplay(amount: number): string {
   const abs = Math.abs(amount)
@@ -170,7 +169,6 @@ export default function ProfilePage() {
 
   return (
     <>
-      <NavBar />
       <div className="receipt">
         <div className="receipt-header">
           <h1>

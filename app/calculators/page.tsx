@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import NavBar from '@/components/NavBar'
 import { SITE_URL } from '@/lib/site-config'
 
 export const metadata: Metadata = {
@@ -36,7 +35,6 @@ const tools = [
 export default function CalculatorsHub() {
   return (
     <main className="page">
-      <NavBar />
       <div className="receipt">
         <div className="receipt-header">
           <h1>Tax Calculators</h1>

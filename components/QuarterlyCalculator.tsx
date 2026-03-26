@@ -7,7 +7,6 @@ import { computeQuarterlyEstimates } from '@/lib/quarterly-engine'
 import type { QuarterlyResult } from '@/lib/quarterly-engine'
 import { parseCurrencyInput } from '@/lib/format'
 import Link from 'next/link'
-import NavBar from '@/components/NavBar'
 import ProfileSummary from '@/components/ProfileSummary'
 import TaxPicture from '@/components/TaxPicture'
 import QuarterlyPaymentBox from '@/components/QuarterlyPaymentBox'
@@ -172,7 +171,6 @@ export default function QuarterlyCalculator() {
 
   return (
     <>
-      <NavBar />
       <div className="receipt">
         <div className="receipt-header">
           <h1>
