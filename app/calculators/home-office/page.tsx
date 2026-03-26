@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function HomeOfficePage() {
   return (
-    <main className="page">
+    <main>
       <HomeOfficeLoader />
       <script
         type="application/ld+json"
