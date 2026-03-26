@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { computeTaxLiability, computeSavings, SavingsBreakdown, TaxResult } from '@/lib/tax-engine'
 import { useProfile } from '@/lib/use-profile'
 import Link from 'next/link'
-import NavBar from '@/components/NavBar'
 import ProfileSummary from '@/components/ProfileSummary'
 import RatesSummary from '@/components/RatesSummary'
 import PurchaseInput from '@/components/PurchaseInput'
@@ -21,7 +20,6 @@ export default function Calculator() {
 
   return (
     <>
-      <NavBar />
       <div className="receipt">
         <div className="receipt-header">
           <h1>
