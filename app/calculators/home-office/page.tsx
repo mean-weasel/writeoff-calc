@@ -5,7 +5,7 @@ import { SITE_URL } from '@/lib/site-config'
 export const metadata: Metadata = {
   title: 'Home Office Deduction Calculator 2025–2026 — See Your Real Monthly Costs',
   description:
-    'See the real cost of your rent, internet, phone, and utilities after your home office tax deduction. Free calculator for W-2 employees with an LLC or side business.',
+    'Free home office deduction calculator for W-2 employees with an LLC. Compare simplified vs. actual method and see the real cost of rent, internet, and utilities after your tax deduction.',
   alternates: { canonical: '/calculators/home-office' },
   openGraph: {
     title: 'Your $2,400/mo Rent Actually Costs $1,632/mo',

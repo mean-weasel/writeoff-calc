@@ -1,1 +1,1 @@
-export const SITE_URL = 'https://writeoff-calc.vercel.app'
+export const SITE_URL = 'https://writeoffcalculator.com'

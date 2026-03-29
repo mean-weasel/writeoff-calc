@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { SITE_URL } from '@/lib/site-config'
 
 export const metadata: Metadata = {
-  title: 'Tax Calculators for W-2 + LLC Owners — 2025–2026',
+  title: 'Tax Write-Off & Deduction Calculators for W-2 + LLC Owners — 2025–2026',
   description:
-    'Free tax calculators for W-2 employees with a side business. See the real cost of write-offs, home office deductions, and quarterly estimated taxes.',
+    'Free tax calculators for W-2 employees with a side business. Tax write-off calculator, home office deduction calculator, and quarterly estimated tax calculator.',
   alternates: { canonical: '/calculators' },
   openGraph: {
     title: 'That $2,000 laptop? It actually costs $1,320.',

@@ -5,7 +5,7 @@ import { SITE_URL } from '@/lib/site-config'
 export const metadata: Metadata = {
   title: 'Quarterly Estimated Tax Calculator 2025–2026 — W-2 + Self-Employment',
   description:
-    'Calculate how much to set aside each quarter when you have W-2 income and an LLC. Includes safe harbor rules and W-4 withholding strategy.',
+    'Free quarterly tax calculator for W-2 employees with an LLC. Calculate your quarterly tax payment, check safe harbor compliance, and get a W-4 withholding strategy.',
   alternates: { canonical: '/calculators/quarterly-estimates' },
   openGraph: {
     title: 'How Much Should You Set Aside Each Quarter?',

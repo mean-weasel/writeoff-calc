@@ -13,7 +13,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://writeoff-calc.vercel.app'),
+  metadataBase: new URL('https://writeoffcalculator.com'),
   title: {
     default: 'Tax Calculators for W-2 + LLC Owners',
     template: '%s | Tax Calculators',

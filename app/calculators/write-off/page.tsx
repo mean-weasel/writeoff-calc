@@ -3,9 +3,9 @@ import CalculatorLoader from '@/components/CalculatorLoader'
 import { SITE_URL } from '@/lib/site-config'
 
 export const metadata: Metadata = {
-  title: 'Business Write-Off Calculator 2025–2026 — See Your Real Cost',
+  title: 'Tax Write-Off Calculator 2025–2026 — See Your Real Cost After Deductions',
   description:
-    'Enter a business purchase and see what it actually costs after tax write-offs. Free calculator for W-2 employees with an LLC or side business.',
+    'Free tax write-off calculator for W-2 employees with an LLC or side business. Enter a business expense and see what it actually costs after your tax deduction.',
   alternates: { canonical: '/calculators/write-off' },
   openGraph: {
     title: 'See What Business Expenses Actually Cost You',
