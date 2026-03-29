@@ -112,7 +112,7 @@ export default function ProfileSummary({ profile, baseline }: ProfileSummaryProp
 
   return (
     <div className="profile-section">
-      <div className="section-label">Your Profile</div>
+      <h2 className="section-label">Your Profile</h2>
       <div
         style={{
           textAlign: 'center',

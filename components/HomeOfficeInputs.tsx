@@ -265,7 +265,7 @@ export default function HomeOfficeInputs(props: HomeOfficeInputsProps) {
   return (
     <>
       <div className="profile-section">
-        <div className="section-label">Your Home Office</div>
+        <h2 className="section-label">Your Home Office</h2>
         <SqftInputs
           officeSqft={props.officeSqft}
           homeSqft={props.homeSqft}
@@ -275,7 +275,7 @@ export default function HomeOfficeInputs(props: HomeOfficeInputsProps) {
         />
       </div>
       <div className="profile-section">
-        <div className="section-label">Monthly Expenses</div>
+        <h2 className="section-label">Monthly Expenses</h2>
         {EXPENSE_CONFIGS.map((config) => (
           <ExpenseRow
             key={config.key}

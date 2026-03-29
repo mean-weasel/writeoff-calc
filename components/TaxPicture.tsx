@@ -10,7 +10,7 @@ interface TaxPictureProps {
 export default function TaxPicture({ result }: TaxPictureProps) {
   return (
     <div className="profile-section">
-      <div className="section-label">Tax Picture</div>
+      <h2 className="section-label">Tax Picture</h2>
 
       <div className="profile-row" style={{ fontSize: '13px', marginBottom: '6px' }}>
         <span style={{ color: '#555' }}>Total tax liability</span>

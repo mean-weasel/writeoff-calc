@@ -16,7 +16,7 @@ export default function PurchaseInput({ value, onChange }: PurchaseInputProps) {
 
   return (
     <div className="purchase-section">
-      <div className="section-label">Business Purchase</div>
+      <h2 className="section-label">Business Purchase</h2>
       <div className="purchase-input-wrap">
         <span className="dollar">$</span>
         <input

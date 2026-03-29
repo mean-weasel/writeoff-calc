@@ -63,7 +63,7 @@ export default function MethodComparison({ result, llcNetIncome }: MethodCompari
 
   return (
     <div className="profile-section">
-      <div className="section-label">Simplified vs Actual Method</div>
+      <h2 className="section-label">Simplified vs Actual Method</h2>
       <div style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}>
         <MethodCard label="Simplified" amount={result.simplified.annualDeduction} isBetter={!result.recommendActual} />
         <MethodCard label="Actual" amount={result.actual.totalAnnualDeduction} isBetter={result.recommendActual} />

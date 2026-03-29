@@ -21,7 +21,7 @@ export default function QuickCompare({ profile, onSelectAmount }: QuickComparePr
 
   return (
     <div className="quick-compare">
-      <div className="section-label">Quick Compare</div>
+      <h2 className="section-label">Quick Compare</h2>
       <div className="compare-row">
         {results.map(({ amount, savings }) => (
           <div

@@ -178,7 +178,7 @@ export default function ProfilePage() {
         </div>
 
         <div className="profile-section">
-          <div className="section-label">Your Tax Profile</div>
+          <h2 className="section-label">Your Tax Profile</h2>
           <ProfileForm profile={profile} onChange={setProfile} />
         </div>
 

@@ -110,7 +110,7 @@ export default function HomeOfficeResults({ result }: HomeOfficeResultsProps) {
 
   return (
     <div className="profile-section" style={{ paddingBottom: '0', borderBottom: 'none' }}>
-      <div className="section-label">Your Savings</div>
+      <h2 className="section-label">Your Savings</h2>
       {activeExpenses.map((expense) => (
         <ExpenseLineItem
           key={expense.name}

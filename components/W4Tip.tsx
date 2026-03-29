@@ -10,7 +10,7 @@ interface W4TipProps {
 export default function W4Tip({ w4Increase }: W4TipProps) {
   return (
     <div className="profile-section">
-      <div className="section-label">Alternative: Increase Your W-4</div>
+      <h2 className="section-label">Alternative: Increase Your W-4</h2>
       <div
         style={{
           fontSize: '12px',

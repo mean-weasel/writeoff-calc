@@ -63,7 +63,7 @@ function WithholdingSection({
 
   return (
     <div className="profile-section">
-      <div className="section-label">Your Withholding</div>
+      <h2 className="section-label">Your Withholding</h2>
       <div className="profile-row">
         <span className="label">Annual W-2 Withholding</span>
         <input

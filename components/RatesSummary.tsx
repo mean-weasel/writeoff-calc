@@ -28,7 +28,7 @@ export default function RatesSummary({ baseline, state }: RatesSummaryProps) {
 
   return (
     <div className="rates-summary">
-      <div className="section-label">Your Rates</div>
+      <h2 className="section-label">Your Rates</h2>
 
       <div className="rates-row">
         <span>Federal marginal bracket</span>
