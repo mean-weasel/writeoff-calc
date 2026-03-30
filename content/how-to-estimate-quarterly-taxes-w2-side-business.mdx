@@ -6,6 +6,8 @@ If you have a W-2 job and earn extra income from a side business or LLC, you pro
 
 When you're a W-2 employee, your employer withholds taxes from every paycheck. But your side business income has no withholding — nobody takes taxes out before the money hits your account. The IRS expects you to pay as you earn, not all at once in April. That's what quarterly estimated payments are for.
 
+The rule is simple: if you expect to owe $1,000 or more in tax after subtracting withholding, you need to make quarterly payments. For most people with a W-2 job and even a modest side business, that threshold is easy to hit.
+
 ## The four quarterly deadlines
 
 | Quarter | Income earned        | Payment due            |
@@ -15,15 +17,55 @@ When you're a W-2 employee, your employer withholds taxes from every paycheck. B
 | Q3      | June – August        | September 15           |
 | Q4      | September – December | January 15 (next year) |
 
+Note that Q2 only covers two months (April–May), while Q3 covers three (June–August). The IRS quarters aren't equal — they're based on the [Form 1040-ES](https://www.irs.gov/forms-pubs/about-form-1040-es) payment schedule, not calendar quarters.
+
+If a deadline falls on a weekend or holiday, the due date moves to the next business day.
+
 ## How to calculate your quarterly payment
 
 Your quarterly payment covers two taxes on your self-employment income:
 
-1. **Self-employment tax (15.3%)** — This is Social Security (12.4%) and Medicare (2.9%) on your net self-employment income. You get to deduct half of this.
+1. **Self-employment tax (15.3%)** — This is Social Security (12.4%) and Medicare (2.9%) on your net self-employment income. You get to deduct half of this from your adjusted gross income.
 
-2. **Income tax** — Your side business profit gets added on top of your W-2 income, so it's taxed at your marginal rate (the bracket your W-2 income already pushed you into).
+2. **Income tax** — Your side business profit gets added on top of your W-2 income, so it's taxed at your [marginal rate](https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2025) (the bracket your W-2 income already pushed you into).
 
 The basic formula: take your estimated annual LLC profit, calculate SE tax + income tax on it, subtract what your W-2 employer already withholds, then divide by 4.
+
+## Worked example: $50K W-2 + $25K LLC
+
+Here's the full calculation for someone earning $50,000 from a W-2 job and $25,000 from a single-member LLC, filing single in Arizona:
+
+**Step 1: Self-employment tax**
+
+| Item                  | Amount     |
+| --------------------- | ---------- |
+| LLC net profit        | $25,000    |
+| × 92.35% (IRS factor) | $23,087    |
+| Social Security 12.4% | $2,863     |
+| Medicare 2.9%         | $670       |
+| **Total SE tax**      | **$3,533** |
+
+**Step 2: Income tax on LLC profit**
+
+Your $50K W-2 salary already fills the 10% and 12% brackets. Your LLC profit lands in the 22% bracket. After accounting for the standard deduction and the deduction for half of SE tax:
+
+| Item                        | Amount      |
+| --------------------------- | ----------- |
+| LLC profit taxed at 22%     | ~$5,500     |
+| State tax (AZ 2.5%)         | ~$625       |
+| **Total income tax on LLC** | **~$6,125** |
+
+**Step 3: Total additional tax**
+
+| Item                  | Amount      |
+| --------------------- | ----------- |
+| SE tax                | $3,533      |
+| Income tax on LLC     | $6,125      |
+| **Total**             | **$9,658**  |
+| Minus W-2 withholding | varies      |
+| **Quarterly payment** | **~$2,415** |
+
+This is an estimate — your actual numbers depend on your specific W-2 withholding, deductions, and state. That's exactly what our calculator computes for you.
 
 ## The safe harbor rule (avoid penalties)
 
@@ -32,13 +74,65 @@ You don't need to estimate your taxes perfectly. The IRS gives you a "safe harbo
 - **100% rule**: Pay at least 100% of last year's total tax liability (110% if your AGI was over $150K per [IRS Topic 306](https://www.irs.gov/taxtopics/tc306))
 - **90% rule**: Pay at least 90% of this year's actual tax liability
 
-Most people with a W-2 and side business use the 100% rule because it's based on known numbers from last year's return.
+Most people with a W-2 and side business use the 100% rule because it's based on known numbers from last year's return. Just look at Line 24 on your prior year Form 1040 — that's your total tax. Divide by 4. Done.
+
+### Which rule should you use?
+
+| Situation                         | Best rule           |
+| --------------------------------- | ------------------- |
+| LLC income similar to last year   | 100% of prior year  |
+| First year with side business     | 90% of current year |
+| LLC income growing fast           | 100% of prior year  |
+| AGI over $150K                    | 110% of prior year  |
+| LLC income dropping significantly | 90% of current year |
+
+The 100% rule is almost always safer because you know the exact number upfront. The 90% rule requires you to estimate this year's income accurately — and if you're wrong, you owe penalties.
+
+## What happens if you underpay
+
+The IRS charges an underpayment penalty calculated at the [federal short-term rate](https://www.irs.gov/newsroom/interest-rates-remain-the-same-for-the-second-quarter-of-2025) plus 3 percentage points, applied per quarter. It's essentially interest on the amount you should have paid but didn't.
+
+The penalty isn't catastrophic — at current rates, underpaying by $2,000 for one quarter might cost you $40–60 in penalties. But it adds up across four quarters, and the IRS calculates it automatically when you file.
+
+The penalty is waived entirely if your total tax owed (after withholding) is less than $1,000.
+
+## How to pay
+
+You have several options for making quarterly payments:
+
+- **[IRS Direct Pay](https://www.irs.gov/payments/direct-pay)**: Free, pay from your bank account. Select "Estimated Tax" and the correct quarter.
+- **[EFTPS](https://www.eftps.gov/)**: The IRS Electronic Federal Tax Payment System. Requires enrollment but lets you schedule payments in advance.
+- **IRS2Go app**: The IRS mobile app lets you make payments on your phone.
+- **Credit or debit card**: Through approved payment processors. Convenience fees apply (1.85–1.98% for credit cards).
+
+For state estimated taxes, check your state's tax authority website. Most states have their own quarterly payment system with the same deadlines.
 
 ## Adjust your W-4 instead
 
 Here's a strategy many people miss: instead of writing quarterly checks to the IRS, you can increase your W-4 withholding at your day job. The IRS treats W-2 withholding as if it was paid evenly throughout the year, even if you increase it in December. This means you can avoid quarterly payments entirely by having your employer withhold extra.
 
 To use this approach, divide your estimated quarterly payment by the number of remaining pay periods and add that amount as "Extra withholding" on Line 4(c) of your [W-4 form](https://www.irs.gov/forms-pubs/about-form-w-4).
+
+**Advantages of the W-4 approach:**
+
+- No separate quarterly payments to remember
+- Withholding is treated as paid evenly throughout the year (avoids underpayment penalties even if you adjust late)
+- One less thing to manage
+
+**Disadvantages:**
+
+- Smaller paychecks from your day job
+- Harder to track LLC tax costs separately
+- You need to update your W-4 each year as LLC income changes
+
+## Your first year with a side business
+
+If this is your first year with LLC income, you have no "prior year" to base the 100% safe harbor on — at least not one that includes self-employment tax. Here's what to do:
+
+1. **Estimate conservatively**: Take your expected LLC profit, multiply by 30–35%, and set that aside for taxes
+2. **Start payments in Q1**: Don't wait until you're behind
+3. **Adjust as you go**: If your LLC earns more or less than expected, adjust future quarterly payments
+4. **Use the 90% rule**: Since your prior year didn't include LLC income, the 100% rule gives you a pass — but you'll still owe a large balance at filing time
 
 ## The easy way
 
