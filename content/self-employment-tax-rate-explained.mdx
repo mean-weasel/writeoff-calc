@@ -8,6 +8,8 @@ When you work a W-2 job, you pay 7.65% of your wages for Social Security (6.2%) 
 
 When you're self-employed, you're both the employee and the employer. So you pay both halves — the full 15.3%. That's the [self-employment tax](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes).
 
+SE tax is separate from income tax. Even if your income is low enough that you owe zero income tax, you still owe SE tax on your net self-employment earnings. It's reported on [Schedule SE](https://www.irs.gov/forms-pubs/about-schedule-se-form-1040) and paid alongside your income tax (usually through quarterly estimated payments).
+
 ## The 2026 SE tax rate breakdown
 
 | Component                        | Rate      | Wage base limit            |
@@ -19,19 +21,47 @@ When you're self-employed, you're both the employee and the employer. So you pay
 | **Total SE tax**                 | **15.3%** |                            |
 | Additional Medicare              | 0.9%      | Over $200K ($250K married) |
 
+The Social Security portion (12.4%) has a wage base limit — it only applies to the first [$176,100](https://www.ssa.gov/oact/cola/cbb.html) of combined wages and self-employment income in 2026. The Medicare portion (2.9%) has no limit and applies to all SE income.
+
 ## Three things that reduce your SE tax
 
 ### 1. The 92.35% multiplier
 
-You don't pay SE tax on 100% of your net self-employment income. The IRS applies a [92.35% factor](https://www.irs.gov/forms-pubs/about-schedule-se-form-1040) first. On $50,000 of LLC profit, you pay SE tax on $46,175.
+You don't pay SE tax on 100% of your net self-employment income. The IRS applies a [92.35% factor](https://www.irs.gov/forms-pubs/about-schedule-se-form-1040) first. This mirrors the fact that W-2 employees don't pay FICA on the employer's share. On $50,000 of LLC profit, you pay SE tax on $46,175 — not $50,000.
 
 ### 2. The deduction for half of SE tax
 
-You can deduct the employer-equivalent half (7.65%) of your SE tax from your adjusted gross income. This lowers your income tax, though not your SE tax itself.
+You can deduct the employer-equivalent half (7.65%) of your SE tax from your adjusted gross income. This is an "above the line" deduction — you get it regardless of whether you itemize. It lowers your income tax, though not your SE tax itself.
+
+For example, if your total SE tax is $3,533, you can deduct $1,766 from your AGI. If you're in the 22% bracket, that saves you an additional $388 in income tax.
 
 ### 3. The Social Security wage base
 
 Social Security tax (12.4%) only applies up to [$176,100](https://www.ssa.gov/oact/cola/cbb.html) of combined wages and self-employment income in 2026. If your W-2 salary already covers most of that cap, your side business income might owe little or no Social Security tax — just the 2.9% Medicare portion.
+
+This is a big deal for higher earners. If your W-2 salary is $160,000, only the first $16,100 of your LLC income is subject to Social Security tax. Everything above that owes only 2.9% Medicare.
+
+## How SE tax varies by W-2 salary
+
+Your W-2 salary affects your SE tax because both count toward the Social Security wage base. Here's how $25,000 in LLC profit is taxed at different salary levels:
+
+| W-2 Salary | SS room remaining | SS tax on LLC | Medicare on LLC | Total SE tax | Effective rate |
+| ---------- | ----------------- | ------------- | --------------- | ------------ | -------------- |
+| $0         | $176,100          | $2,863        | $670            | $3,533       | 14.1%          |
+| $50,000    | $126,100          | $2,863        | $670            | $3,533       | 14.1%          |
+| $100,000   | $76,100           | $2,863        | $670            | $3,533       | 14.1%          |
+| $150,000   | $26,100           | $2,863        | $670            | $3,533       | 14.1%          |
+| $176,100+  | $0                | $0            | $670            | $670         | 2.7%           |
+
+At $25K LLC profit, the SE tax is the same until your W-2 salary exceeds the wage base. Once your salary passes $176,100, your LLC income owes only Medicare tax — dropping the effective SE rate from 14.1% to just 2.7%.
+
+## The Additional Medicare Tax
+
+There's a third layer that kicks in at high income levels: the [Additional Medicare Tax](https://www.irs.gov/businesses/small-businesses-self-employed/questions-and-answers-for-the-additional-medicare-tax) of 0.9%. It applies to combined wages and SE income over $200,000 (single) or $250,000 (married filing jointly).
+
+This tax only hits the amount above the threshold. If you earn $180,000 in W-2 wages and $40,000 in LLC profit, the Additional Medicare Tax applies to $20,000 ($220,000 total minus $200,000 threshold) = $180 extra.
+
+Unlike the regular Medicare tax, the Additional Medicare Tax has no employer match — it's only on the employee side.
 
 ## Example: $50K W-2 salary + $25K LLC profit
 
@@ -44,6 +74,31 @@ Here's how SE tax works for someone earning $50,000 from a W-2 job and $25,000 f
 5. **Deductible half**: $1,766 (reduces your income tax)
 
 Your effective SE tax rate on the $25,000 LLC profit is about 14.1% — not the full 15.3%.
+
+## Example: $160K W-2 salary + $40K LLC profit
+
+Now here's someone where the wage base matters:
+
+1. **Net SE income**: $40,000 × 92.35% = $36,940
+2. **Social Security room**: $176,100 − $160,000 = $16,100. Only $16,100 of the $36,940 is subject to SS tax.
+3. **Social Security**: $16,100 × 12.4% = $1,996
+4. **Medicare**: $36,940 × 2.9% = $1,071
+5. **Total SE tax**: $3,067
+6. **Deductible half**: $1,534
+
+Effective SE tax rate: 7.7%. The W-2 salary consumed most of the Social Security wage base, cutting the SE tax nearly in half compared to someone without a W-2 job.
+
+## Common misconceptions
+
+**"I pay 15.3% on all my LLC income."** No — the 92.35% multiplier reduces the base, the deduction for half of SE tax reduces your income tax, and if your W-2 salary is high enough, the Social Security cap kicks in.
+
+**"SE tax is the same as income tax."** They're separate taxes. SE tax funds Social Security and Medicare. Income tax is based on your total taxable income across brackets. You pay both.
+
+**"My LLC income is taxed twice."** It's not double-taxed. SE tax covers the payroll taxes that W-2 employers split with employees. Income tax is applied to the profit that remains after the SE tax deduction. They're different taxes on different bases.
+
+## How SE tax connects to write-offs
+
+Every LLC business expense you write off reduces your SE tax, not just your income tax. A $1,000 write-off saves you approximately $141 in SE tax (14.1% effective rate) plus whatever your income tax marginal rate yields. This is why the combined "discount" on business expenses is often 30–40% — it's the sum of income tax savings and SE tax savings.
 
 ## Why this matters for your W-2 + LLC situation
 
